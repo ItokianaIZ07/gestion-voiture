@@ -1,16 +1,26 @@
 package CarShow.model;
 
 public class Car {
+    private int id;
     private String nom;
     private String marque;
     private String numero;
     private ModelCar model;
 
-    public Car(String nom, String marque, String numero, ModelCar model) {
+    public Car(int id, String nom, String marque, String numero, ModelCar model) {
+        this.id = id;
         this.nom = nom;
         this.marque = marque;
         this.numero = numero;
         this.model = model;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNom() {
