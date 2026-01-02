@@ -13,7 +13,7 @@ public class Proprietaire {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
-        setListVoiture(listVoiture);
+        this.listVoiture = listVoiture;
     }
 
     public int getId() {
